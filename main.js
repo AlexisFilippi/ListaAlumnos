@@ -1,8 +1,8 @@
-function calcularPromedio() {
+function calcularPromedio(nota1, nota2) {
     // let alumno = prompt("Ingrese su nombre");
     // let nota1 = Number(prompt("Ingrese su nota 1:"));
     // let nota2 = Number(prompt("Ingrese su nota 2:"));
-    // let promedio = (nota1 + nota2) / 2;
+    let promedio = (nota1 + nota2) / 2;
     alert(`Su promedio es ${promedio.toFixed(1)}`);
 
     if (promedio >= 8 && promedio <= 10) {
@@ -18,18 +18,16 @@ function calcularPromedio() {
 //     calcularPromedio();
 // } 
 
-function Alumno (){
-    this.nombre = prompt("Ingrese su nombre ");
-    this.nota1 = Number(prompt("Ingrese su nota 1 "));
-    this.nota2 = Number(prompt("Ingrese su nota 2 "));
-    this.promedio = (nota1 + nota2) / 2;
-    this.promocion = calcularPromedio();
+function Alumno() {
+    this.nombre = prompt("Ingrese su nombre");
+    this.nota1 = Number(prompt("Ingrese su nota 1"));
+    this.nota2 = Number(prompt("Ingrese su nota 2"));
+    this.promocion = calcularPromedio(this.nota1, this.nota2);
 }
 
-Alumno();
-
 const alumnos = [];
-alumnos.push(new Alumno());
-Alumno();
 
+for (let i = 0; i < 5; i++) {
+    alumnos.push(new Alumno());
+}
 
