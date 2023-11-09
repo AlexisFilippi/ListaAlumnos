@@ -80,7 +80,7 @@ const calcularPromedio = document.getElementById("calcularPromedio").addEventLis
 
     let parrafo = document.createElement("p");
     parrafo.classList.add("letraParrafo")
-    parrafo.innerHTML = `Nombre y Apellido: ${nombre} <br> Materia: ${materia} <br> Nota 1: ${nota1} <br> Nota 2: ${nota2} <br> Promedio: ${promedio} <br> Condicion: ${condicion}`
+    parrafo.innerHTML = `Nombre y Apellido: ${nombre} - Materia: ${materia} - Nota 1: ${nota1} - Nota 2: ${nota2} - Promedio: ${promedio} - Condicion: ${condicion}`
     let resultado = document.getElementById("resultado")
     resultado.append(parrafo)
 
