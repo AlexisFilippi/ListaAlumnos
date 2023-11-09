@@ -1,0 +1,90 @@
+.tarjetaGestion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    background-color: lightblue;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 20px ;
+    .tituloGestion{
+        padding: 20px;
+        font-size: 36px;
+        font-family: $fontMontserrat;
+        font-weight: bold;
+    }
+    .tituloDatos{
+        padding: 20px;
+        font-family: $fontMontserrat;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .contenedorForm{
+        padding: 30px;
+        align-items: center;
+        width: 50%;
+        margin-left: 25%;
+        gap: 10px;
+    }
+    .tituloPromedio{
+        padding-bottom: 30px;
+        font-size: 24px;
+        font-family: $fontMontserrat;
+        font-weight: bold;
+    }
+    
+    .boton{
+        background-color: #a7a7a7;
+        font-size: 1.2rem;
+        padding: .375rem .75rem;
+        border: 2px solid black;
+        border-radius: 10px;
+        gap: 20px;  
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    .botonMemoria{
+        background-color: red;
+        font-size: 1.2rem;
+        padding: .375rem .75rem;
+        border: 2px solid black;
+        border-radius: 10px;
+        gap: 20px;  
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .botonLimpiar{
+        background-color: white;
+        font-size: 1.2rem;
+        padding: .375rem .75rem;
+        border: 2px solid black;
+        border-radius: 10px;
+        gap: 20px;  
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+.contenedorResultado{
+    display: flex;
+    padding: 50px;
+    .tituloResultado{
+        padding: 50px;
+        font-size: 36px;
+        font-family: $fontMontserrat;
+        font-weight: bold;
+    }
+    .letraParrafo{
+        background-color: #a7a7a7;
+        padding: 10px;
+        font-size: 20px;
+        font-family: $fontMontserrat;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    .letraParrafoMemoria{
+        background-color: red;
+        padding: 10px;
+        font-size: 20px;
+        font-family: $fontMontserrat;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+}
