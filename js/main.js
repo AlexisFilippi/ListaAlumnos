@@ -62,13 +62,13 @@ const calcularPromedio = document.getElementById("calcularPromedio").addEventLis
 
     if (nombre === "" || materia === "" || nota1 === "" || nota2 === "") {
         Swal.fire({
-                    title: "Complete todos los campos",
-                    text: "Los campos no pueden estar vacios",
-                    icon: "warning"
-                });
+            title: "Complete todos los campos",
+            text: "Los campos no pueden estar vacios",
+            icon: "warning"
+        });
         return;
     }
-    
+
     let promedio = (nota1 + nota2) / 2;
     let condicion;
     if (promedio >= 8 && promedio <= 10) {
