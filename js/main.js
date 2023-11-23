@@ -60,13 +60,22 @@ const calcularPromedio = document.getElementById("calcularPromedio").addEventLis
     let nota1 = parseFloat(document.getElementById("nota1").value);
     let nota2 = parseFloat(document.getElementById("nota2").value);
 
-    if (nombre === "" || materia === "" || nota1 === "" || nota2 === "") {
+    if (nombre === "" || materia === "" || isNaN(nota1) || isNaN(nota2)) {
         Swal.fire({
             title: "Complete todos los campos",
             text: "Los campos no pueden estar vacios",
             icon: "warning"
         });
-        return;
+        return false;
+    }
+
+    if(nota1 > 10 || nota2 > 10){
+        Swal.fire({
+            title: "La nota no puede ser mayor a 10",
+            //text: "Los campos no pueden estar vacios",
+            icon: "warning"  
+        })
+        return false
     }
 
     let promedio = (nota1 + nota2) / 2;
