@@ -60,6 +60,15 @@ const calcularPromedio = document.getElementById("calcularPromedio").addEventLis
     let nota1 = parseFloat(document.getElementById("nota1").value);
     let nota2 = parseFloat(document.getElementById("nota2").value);
 
+    if (nombre === "" || materia === "" || nota1 === "" || nota2 === "") {
+        Swal.fire({
+                    title: "Complete todos los campos",
+                    text: "Los campos no pueden estar vacios",
+                    icon: "warning"
+                });
+        return;
+    }
+    
     let promedio = (nota1 + nota2) / 2;
     let condicion;
     if (promedio >= 8 && promedio <= 10) {
@@ -76,7 +85,7 @@ const calcularPromedio = document.getElementById("calcularPromedio").addEventLis
         title: "Alumno cargado en memoria",
         showConfirmButton: false,
         timer: 1500
-      });
+    });
 
     let parrafo = document.createElement("p");
     parrafo.classList.add("letraParrafo")
@@ -139,13 +148,13 @@ const eliminarMemoria = document.getElementById("eliminarMemoria").addEventListe
         confirmButtonColor: "#3085d6",
         cancelButtonColor: "#d33",
         confirmButtonText: "Si, eliminar!"
-      }).then((result) => {
+    }).then((result) => {
         if (result.isConfirmed) {
-          Swal.fire({
-            title: "Memoria Borrada!",
-            text: "Se ha borrado la memoria",
-            icon: "success"
-          });
+            Swal.fire({
+                title: "Memoria Borrada!",
+                text: "Se ha borrado la memoria",
+                icon: "success"
+            });
         }
-      });
+    });
 })
