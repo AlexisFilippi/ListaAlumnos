@@ -15,6 +15,8 @@
   margin-left: 25%;
   border-radius: 20px;
   margin-top: 50px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.692);
+  border: 2px solid black;
 }
 .tarjetaGestion .tituloGestion {
   padding: 20px;
@@ -42,13 +44,14 @@
   font-weight: bold;
 }
 .tarjetaGestion .boton {
-  background-color: #a7a7a7;
+  background-color: green;
   font-size: 1.2rem;
   padding: 0.375rem 0.75rem;
   border: 2px solid black;
   border-radius: 10px;
   gap: 20px;
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 .tarjetaGestion .botonMemoria {
   background-color: red;
@@ -58,6 +61,7 @@
   border-radius: 10px;
   gap: 20px;
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 .tarjetaGestion .botonLimpiar {
   background-color: white;
@@ -72,6 +76,11 @@
 .contenedorResultado {
   display: flex;
   padding: 50px;
+  background-color: lightblue;
+  margin: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.692);
+  border: 2px solid black;
 }
 .contenedorResultado .tituloResultado {
   padding: 50px;
@@ -80,12 +89,13 @@
   font-weight: bold;
 }
 .contenedorResultado .letraParrafo {
-  background-color: #a7a7a7;
+  background-color: green;
   padding: 10px;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   border-radius: 10px;
+  color: white;
 }
 .contenedorResultado .letraParrafoMemoria {
   background-color: red;
@@ -94,4 +104,32 @@
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   border-radius: 10px;
+  color: white;
+}
+
+.parrafoLista {
+  padding: 50px;
+  margin-left: 5%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(23, 123, 180);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.692);
+  border: 2px solid black;
+}
+.parrafoLista .tituloLista {
+  padding: 50px;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+.parrafoLista .letraLista {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  padding: 6px;
+  margin-left: 50px;
+  color: white;
+  font-weight: bold;
 }/*# sourceMappingURL=estilo.css.map */

@@ -1,4 +1,4 @@
-.tarjetaGestion{
+.tarjetaGestion {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -6,87 +6,148 @@
     background-color: lightblue;
     width: 50%;
     margin-left: 25%;
-    border-radius: 20px ;
+    border-radius: 20px;
     margin-top: 50px;
-    .tituloGestion{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.692);
+    border: 2px solid black;
+
+    
+    .tituloGestion {
         padding: 20px;
         font-size: 36px;
         font-family: $fontMontserrat;
         font-weight: bold;
     }
-    .tituloDatos{
+
+    .tituloDatos {
         padding: 20px;
         font-family: $fontMontserrat;
         font-weight: bold;
         font-size: 30px;
     }
-    .contenedorForm{
+
+    .contenedorForm {
         padding: 30px;
         align-items: center;
         width: 50%;
         margin-left: 25%;
         gap: 10px;
+        
     }
-    .tituloPromedio{
+
+    .tituloPromedio {
         padding-bottom: 30px;
         font-size: 24px;
         font-family: $fontMontserrat;
         font-weight: bold;
     }
-    
-    .boton{
-        background-color: #a7a7a7;
+
+    .boton {
+        background-color: green;
         font-size: 1.2rem;
         padding: .375rem .75rem;
         border: 2px solid black;
         border-radius: 10px;
-        gap: 20px;  
+        gap: 20px;
         font-family: Arial, Helvetica, sans-serif;
-        
+        color: white;
+
     }
-    .botonMemoria{
+
+    .botonMemoria {
         background-color: red;
         font-size: 1.2rem;
         padding: .375rem .75rem;
         border: 2px solid black;
         border-radius: 10px;
-        gap: 20px;  
+        gap: 20px;
         font-family: Arial, Helvetica, sans-serif;
+        color: white;
     }
-    .botonLimpiar{
+
+    .botonLimpiar {
         background-color: white;
         font-size: 1.2rem;
         padding: .375rem .75rem;
         border: 2px solid black;
         border-radius: 10px;
-        gap: 20px;  
+        gap: 20px;
         font-family: Arial, Helvetica, sans-serif;
     }
 }
-.contenedorResultado{
+
+.contenedorResultado {
     display: flex;
     padding: 50px;
-    .tituloResultado{
+    background-color: lightblue;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.692);
+    border: 2px solid black;
+
+
+    .tituloResultado {
         padding: 50px;
         font-size: 36px;
         font-family: $fontMontserrat;
         font-weight: bold;
+        
     }
-    .letraParrafo{
-        background-color: #a7a7a7;
+
+    .letraParrafo {
+        background-color: green;
         padding: 10px;
         font-size: 20px;
         font-family: $fontMontserrat;
         font-weight: bold;
         border-radius: 10px;
+        color: white;
+        
     }
-    .letraParrafoMemoria{
+
+    .letraParrafoMemoria {
         background-color: red;
         padding: 10px;
         font-size: 20px;
         font-family: $fontMontserrat;
         font-weight: bold;
         border-radius: 10px;
-        
+        color: white;
+
+    }
+}
+
+.parrafoLista {
+    padding: 50px;
+    margin-left: 5%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(23, 123, 180);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.692);
+    border: 2px solid black;
+
+
+
+    .tituloLista {
+        padding: 50px;
+        font-size: 36px;
+        font-family: $fontMontserrat;
+        font-weight: bold;
+        color: white;
+
+    }
+
+    .letraLista {
+        font-family: $fontMontserrat;
+        font-size: 18px;
+        padding: 6px;
+        margin-left: 50px;
+        color: white;
+        font-weight: bold;
+
+
+
     }
 }
