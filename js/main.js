@@ -69,11 +69,11 @@ const calcularPromedio = document.getElementById("calcularPromedio").addEventLis
         return false;
     }
 
-    if(nota1 > 10 || nota2 > 10){
+    if (nota1 > 10 || nota2 > 10) {
         Swal.fire({
             title: "La nota no puede ser mayor a 10",
             //text: "Los campos no pueden estar vacios",
-            icon: "warning"  
+            icon: "warning"
         })
         return false
     }
@@ -95,14 +95,13 @@ const calcularPromedio = document.getElementById("calcularPromedio").addEventLis
         showConfirmButton: false,
         timer: 1500
     });
-    setTimeout(() => {
-        let parrafo = document.createElement("p");
-        parrafo.classList.add("letraParrafo")
-        parrafo.innerHTML = `Nombre y Apellido: ${nombre} - Materia: ${materia} - Nota 1: ${nota1} - Nota 2: ${nota2} - Promedio: ${promedio} - Condicion: ${condicion}`
-        let resultado = document.getElementById("resultado")
-        resultado.append(parrafo)  
-    }, 1000);
-   
+
+
+    let parrafo = document.createElement("p");
+    parrafo.classList.add("letraParrafo")
+    parrafo.innerHTML = `Nombre y Apellido: ${nombre} - Materia: ${materia} - Nota 1: ${nota1} - Nota 2: ${nota2} - Promedio: ${promedio} - Condicion: ${condicion}`
+    let resultado = document.getElementById("resultado")
+    resultado.append(parrafo)
 
     document.getElementById("nombre").value = "";
     document.getElementById("materia").value = "";
@@ -139,13 +138,10 @@ document.getElementById("traerMemoria").addEventListener("click", function () {
     if (arrayMemoria !== null) {
         let resultado = document.getElementById("resultado")
         arrayMemoria.forEach(alumno => {
-           setTimeout(() => {
             let parrafo = document.createElement("p");
             parrafo.classList.add("letraParrafoMemoria")
             parrafo.innerHTML = JSON.parse(alumno);
             resultado.append(parrafo)
-           }, 1000); 
-            
         });
     }
 })
