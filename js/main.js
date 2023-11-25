@@ -95,12 +95,14 @@ const calcularPromedio = document.getElementById("calcularPromedio").addEventLis
         showConfirmButton: false,
         timer: 1500
     });
-
-    let parrafo = document.createElement("p");
-    parrafo.classList.add("letraParrafo")
-    parrafo.innerHTML = `Nombre y Apellido: ${nombre} - Materia: ${materia} - Nota 1: ${nota1} - Nota 2: ${nota2} - Promedio: ${promedio} - Condicion: ${condicion}`
-    let resultado = document.getElementById("resultado")
-    resultado.append(parrafo)
+    setTimeout(() => {
+        let parrafo = document.createElement("p");
+        parrafo.classList.add("letraParrafo")
+        parrafo.innerHTML = `Nombre y Apellido: ${nombre} - Materia: ${materia} - Nota 1: ${nota1} - Nota 2: ${nota2} - Promedio: ${promedio} - Condicion: ${condicion}`
+        let resultado = document.getElementById("resultado")
+        resultado.append(parrafo)  
+    }, 1000);
+   
 
     document.getElementById("nombre").value = "";
     document.getElementById("materia").value = "";
@@ -137,10 +139,13 @@ document.getElementById("traerMemoria").addEventListener("click", function () {
     if (arrayMemoria !== null) {
         let resultado = document.getElementById("resultado")
         arrayMemoria.forEach(alumno => {
+           setTimeout(() => {
             let parrafo = document.createElement("p");
             parrafo.classList.add("letraParrafoMemoria")
             parrafo.innerHTML = JSON.parse(alumno);
             resultado.append(parrafo)
+           }, 1000); 
+            
         });
     }
 })
