@@ -94,21 +94,28 @@ const eliminarMemoria = document.getElementById("eliminarMemoria").addEventListe
     localStorage.removeItem("arrayAlumno")
     let resultado = document.getElementById("resultado")
     resultado.innerHTML = ""
+    // Swal.fire({
+    //     title: "Estas Seguro?",
+    //     text: "",
+    //     icon: "warning",
+    //     showCancelButton: true,
+    //     confirmButtonColor: "#3085d6",
+    //     cancelButtonColor: "#d33",
+    //     confirmButtonText: "Si, eliminar!"
+    // }).then((result) => {
+    //     if (result.isConfirmed) {
+    //         Swal.fire({
+    //             title: "Memoria Borrada!",
+    //             text: "Se ha borrado la memoria",
+    //             icon: "success"
+    //         });
+    //     }
+    // }); 
     Swal.fire({
-        title: "Estas Seguro?",
-        text: "",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#3085d6",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "Si, eliminar!"
-    }).then((result) => {
-        if (result.isConfirmed) {
-            Swal.fire({
-                title: "Memoria Borrada!",
-                text: "Se ha borrado la memoria",
-                icon: "success"
-            });
-        }
-    });
+        position: "center",
+        icon: "success",
+        title: "Memoria eliminada",
+        showConfirmButton: false,
+        timer: 1500
+      });
 })
